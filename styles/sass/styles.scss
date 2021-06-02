@@ -1,0 +1,300 @@
+@import "./partials/setup";
+@import "./partials/variable";
+@import "./partials/typography";
+
+
+
+
+
+// body {
+//     background-color:black;
+//     color:white;
+// }
+
+
+
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1080px;
+    width: 90%;
+}
+
+header {
+    color:black;
+    background-color: red; /* For browsers that do not support gradients */
+
+  background-image: linear-gradient(to right, $color2 , $mainColor);
+    background-size:cover;
+    height:755px;
+    position:relative;
+}
+
+header::before {
+    content: ' ';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+  background-image: url('https://assets.digitalocean.com/labs/images/community_bg.png');
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  background-size: cover;
+}
+
+.headerContainer {
+    display:flex;
+    flex-direction:column;
+}
+
+.normalMenu {
+    margin-top:30px;
+    list-style:none;
+    display:flex;
+    justify-content: right;
+
+}
+
+.normalMenu a {
+    margin: 0 20px;
+    text-decoration:none;
+    color:black;
+    font-family: $mainFont;
+    font-size:2rem;
+    line-height:2.9rem;
+    text-transform:uppercase;
+}
+
+.normalMenu a:hover {
+    border-bottom: 3px solid $seaGreen;
+    
+}
+
+.burgerMenu,
+.mobile {
+    display:none;
+}
+
+.topName {
+    margin-top:20vh;
+}
+
+h1 {
+    text-align:center;
+    margin: 0;
+    z-index:10;
+}
+
+.about {
+    margin:100px 0;
+}
+
+
+.aboutMe {
+    border-bottom:5px solid $mainColor;
+}
+
+.aboutContainer {
+    display:flex;
+}
+
+.aboutText {
+    margin-left:4vw;
+    margin-right:4vw;
+    
+}
+
+.aboutText p {
+    margin:50px 0;
+}
+
+
+
+.myself {
+    margin-left:4vw;
+    width:35vw;
+}
+
+.links {
+    font-size:3rem;
+    text-decoration: none;
+    display:flex;
+    justify-content:center;
+    list-style:none;
+}
+
+.links a {
+    font-size:5rem;
+    margin: 50px 50px;
+}
+
+
+a {
+    text-decoration: none;
+    font-size:2.5rem;
+    color:black;
+}
+
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+    color:$mainColor;
+}
+
+.skills {
+    background-color:$color3;
+    padding-top:100px;
+}
+
+
+.skillName:hover{
+    color:$mainColor;
+} 
+
+.skillsContainer{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+    // justify-content:space-between;
+
+}
+
+.skillName {
+    list-style:none;
+    // margin: 2rem 5vw;
+    color:$mainColor;
+    font-family:'Poppins', sans-serif;
+    text-align:center;
+    // width:15%;
+    margin: 10px auto;
+    padding: 20px;
+    flex-basis:23%;
+    
+}
+
+.skillName p {
+    margin-top:30px;
+    font-size:1.5rem;
+    height:2rem;
+}
+
+.skillName i{
+    font-size:5rem;
+    color:black;
+}
+
+.projectPhoto img{
+    width:35vw;
+    border: 5px solid $mainColor;
+}
+
+.projectContainer {
+    margin: 2vw;
+}
+
+.projectTitle {
+    border-bottom:5px solid $mainColor;
+    margin-top:100px;
+}
+
+.skillsUsed {
+    display:flex;
+}
+
+.project {
+    display:flex;
+    margin: 100px 2vw;
+    
+}
+
+.projectLink {
+    font-size:2.5rem;
+}
+
+.formContainer {
+    width: 100%;
+    font-size:2rem;
+    display:block;
+}
+
+.short {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+ input,
+ textarea{
+    width:100%;
+    margin-bottom: 20px;
+    padding:10px;
+}
+
+.short1,
+.short2 {
+   width: 48%;
+}
+
+.contactBoxContainer {
+    display:flex;
+    justify-content:space-between;
+}
+
+.contactBox {
+    background-color:$color3;
+    padding: 50px;
+    width:45%;
+    border: 2px solid $color5;
+    margin-top:40px;
+    text-align: center;
+}
+
+.contactBox p{
+    text-decoration:underline;
+    margin: 20px 0;
+}
+
+.contactBox i {
+    font-size:5rem;
+}
+
+.contact h2 {
+    margin: 20px 0;
+}
+
+.directContact {
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.formContainer {
+    margin-top:100px;
+}
+
+.submitButton {
+    display:block;
+    margin: 0 auto;
+    background-color:$mainColor;
+    padding:10px 30px;
+    border:none;
+    border-radius:5%;
+    margin-bottom:100px;
+}
+
+footer {
+    background-color:$black;
+}
+
+footer p {
+    color:$white;
+    text-align:center;
+}
+
+
+@import './partials/mediaQueries'

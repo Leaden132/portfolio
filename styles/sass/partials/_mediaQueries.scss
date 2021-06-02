@@ -1,0 +1,86 @@
+
+@media (max-width: 680px) {
+    
+
+    //home
+    
+    
+    .wrapper {
+        max-width: 680px;
+        width: 95%;
+        margin:0;
+    }
+    
+    .normalMenu {
+        display:none;
+    }
+    
+    .burgerMenu,
+    .mobile {
+        display:unset;
+    }
+    
+    .burgerMenu {
+        list-style:none;
+        background: $seaGreen;
+        position: fixed;
+        z-index: 10;
+        width: 30%; 
+        left: -30%; 
+        top: 0;
+        height: 256px;
+        transition: all 0.5s; 
+    }
+    
+    .burgerMenu a {
+        text-decoration:none;
+        text-transform: uppercase;
+        font-family:$mainFont;
+        color:$black;
+        border-bottom: 1px solid $black;
+        display: inline-block;
+        font-size: 2rem;
+        width: 100%;
+        padding: 20px;
+        transition: all 0.3s; 
+    }
+    
+    .burgerMenu a:hover,
+    .burgerMenu a:focus {
+        background: #3498db;
+    }
+    
+    .fa {
+        font-size:4rem;
+    }
+    
+    
+    input[type="checkbox"]:checked + .burgerMenu {
+        left: 0;  
+    }
+    
+    // input[type="checkbox"]:checked ~ label.fa {
+    // 	font-size:10rem;
+    // }
+    
+    input[type="checkbox"] {
+        display: none;  
+    }
+    
+    label[for="toggle"] {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 10;
+        
+    }
+    
+    
+    .mainHeader {
+        width:100%;
+        background-position:-1rem 0rem;
+        background-size:110rem 80rem;
+        background-repeat:no-repeat;
+    }
+
+}

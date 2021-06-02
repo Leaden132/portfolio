@@ -4,10 +4,271 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./dist/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/12a501f4a0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
+    <title>Seunggi Lee's Portfolio</title>
 </head>
-<body>
-    <h1>COMING SOON!</h1>
+
+<body> 
+
+    <header class="mainHeader">
+        <div class="wrapper headerContainer">
+            <a href="#mainContent" class="sr-only">Skip to main content</a>
+            <nav>
+                <ul class="normalMenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+
+                <label for="toggle" class="mobile"><i class="fa fa-bars"></i></label>
+                <input type="checkbox" class="mobile" id="toggle" name="toggle" />
+                <ul class="burgerMenu">
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#projects">blog</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Naviagation -->
+
+            <div class="home" id="home">
+                <h1 class="topName">Hello, I am Seunggi Lee</h1> <h1>A Front-End Web Developer</h1>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- About Me -->
+        <section class="about" id="about">
+            <div class="wrapper">
+
+                <div class="aboutContainer">
+                    <div>
+                        <img src="assets/myself.jpg" class="myself" alt="myself">
+                    </div>
+                    <div class="aboutText">
+                        <h2 class="aboutMe">About Me</h2>
+                        <h3>Problem Solver, Team Player, Adaptable</h3>
+                        <p>I am a front-end web developer with a background in neurosience research currently based in downtown Toronto. Through 5+ years of research lab experience, I am extremely familiar with working on difficult problems while being on tight deadlines, going through , and bringing out the result collaborating with diverse teams. My passion for building and maintaining user-friendly and accessible website stems from my innate desire to learn new concepts and add new tools/protocols at my disposal.</p>
+                        <ul class="links">
+                            <li><a href="./assets/resume/Seunggi_Lee_Resume_Draft.pdf" download="Seunggi_Lee_Resume"><span class="fas fa-file"></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/seunggi-lee-msc-4b99b780/"><span class="fab fa-linkedin"></span></a></li>
+                            <li><a href="https://github.com/Leaden132"><span class="fab fa-github"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+            
+
+                
+
+
+
+
+            </div>
+
+        </section>
+
+
+
+
+        <section class="skills">
+            <div class="wrapper">
+                <h3>My Skills</h3>
+                <ul class="skillsContainer">
+                    <li class="skillName"><i class="devicon-html5-plain"></i><p>HTML5</p></li>
+                    <li class="skillName"><i class="devicon-css3-plain"></i><p>CSS3</p></li>
+                    <li class="skillName"><i class="devicon-javascript-plain"></i><p>JavaScript</p></li>
+                    <li class="skillName"><i class="devicon-sass-original"></i><p>SASS</p></li>
+                    <li class="skillName"><i class="devicon-jquery-plain"></i><p>jQuery</p></li>
+                    <li class="skillName"><i class="devicon-react-original"></i><p>React</p></li>
+                    <li class="skillName"><i class="devicon-firebase-plain"></i><p>Firebase</p></li>
+                    <li class="skillName"><i class="devicon-git-plain"></i><p>Git</p></li>
+                    <li class="skillName"><i class="fas fa-cog"></i><p>Rest APIs</p></li>
+                    
+                    <!-- <li class="skillName"><i class="devicons devicons-responsive"><p>Responsive Design</p></i></li> -->
+                    <!-- <li class="skillName"><i class="devicons devicons-terminal_badge"></i><p>Terminal</p></li> -->
+                    <li class="skillName"><i class="fas fa-universal-access"></i><p>Accessibility</p></li>
+                </ul>
+
+
+
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="projects" id="projects">
+            <div class="wrapper">
+                <div class="projectTitle">
+                    <h2>Featured Projects</h2>
+                </div>
+
+                <div class="projectContainer">
+                    <!-- <div class="projectFive">
+                        <div>
+                            <h3>LeagueMatch</h3>
+                        </div>
+                    </div> -->
+
+                    <div class="project projectFour">
+                        <div class=projectDescription>
+                            <h3>Not So Trivial Pursuit</h3>
+                            <p>An interactive and fully responsive web application that quiz users based on API queries from OpenTrivia API. For each combination of user's choice of trivia settings, appropriate trivia quiz will pop up for users. Uncompleted instances of quiz will be saved using firebase and can be called back to keep playing.</p>
+                            <h4>Made with</h4>
+                            <ul class="skillsUsed">
+                                <li class="skillName"><i class="devicon-html5-plain"></i></li>
+                                <li class="skillName"><i class="devicon-sass-original"></i></li>
+                                <li class="skillName"><i class="devicon-react-original"></i></li>
+                                <li class="skillName"><i class="devicon-firebase-plain"></i></li>
+
+                            </ul>
+                            <div class="projectLink">
+                                <a href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit">Github</a>
+                                <span>|</span>
+                                <a href="https://nifty-goodall-444b58.netlify.app/">Live Site</a>
+                            </div>
+                        </div>
+                        <div class="projectPhoto">
+                            <img src="./assets/NotSoTrivialPursuitPhoto.png">
+                        </div>
+                    </div>
+
+                    <div class="project projectThree">
+                        <div class=projectDescription>
+                            <h3>Not So Trivial Pursuit</h3>
+                            <p>An interactive and fully responsive web application that quiz users based on API queries from OpenTrivia API. For each combination of user's choice of trivia settings, appropriate trivia quiz will pop up for users. Uncompleted instances of quiz will be saved using firebase and can be called back to keep playing.</p>
+                            <h4>Made with</h4>
+                            <ul class="skillsUsed">
+                                <li class="skillName"><i class="devicon-html5-plain"></i></li>
+                                <li class="skillName"><i class="devicon-sass-original"></i></li>
+                                <li class="skillName"><i class="devicon-react-original"></i></li>
+                                <li class="skillName"><i class="devicon-firebase-plain"></i></li>
+
+                            </ul>
+                            <div class="projectLink">
+                                <a href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit">Github</a>
+                                <span>|</span>
+                                <a href="https://nifty-goodall-444b58.netlify.app/">Live Site</a>
+                            </div>
+                        </div>
+                        <div class="projectPhoto">
+                            <img src="./assets/NotSoTrivialPursuitPhoto.png">
+                        </div>
+                    </div>
+
+                    <div class="project projectTwo">
+                        <div class=projectDescription>
+                            <h3>Not So Trivial Pursuit</h3>
+                            <p>An interactive and fully responsive web application that quiz users based on API queries from OpenTrivia API. For each combination of user's choice of trivia settings, appropriate trivia quiz will pop up for users. Uncompleted instances of quiz will be saved using firebase and can be called back to keep playing.</p>
+                            <h4>Made with</h4>
+                            <ul class="skillsUsed">
+                                <li class="skillName"><i class="devicon-html5-plain"></i></li>
+                                <li class="skillName"><i class="devicon-sass-original"></i></li>
+                                <li class="skillName"><i class="devicon-react-original"></i></li>
+                                <li class="skillName"><i class="devicon-firebase-plain"></i></li>
+
+                            </ul>
+                            <div class="projectLink">
+                                <a href="https://github.com/SeunggiLeeMeiningChengProject2/TMDBFunMovie">Github</a>
+                                <span>|</span>
+                                <a href="https://seunggileemeiningchengproject2.github.io/TMDBFunMovie/">Live Site</a>
+                            </div>
+                        </div>
+                        <div class="projectPhoto">
+                            <img src="./assets/NotSoTrivialPursuitPhoto.png">
+                        </div>
+                    </div>
+
+                    <div class="project projectOne">
+                        <div class=projectDescription>
+                            <h3>Not So Trivial Pursuit</h3>
+                            <p>An interactive and fully responsive web application that quiz users based on API queries from OpenTrivia API. For each combination of user's choice of trivia settings, appropriate trivia quiz will pop up for users. Uncompleted instances of quiz will be saved using firebase and can be called back to keep playing.</p>
+                            <h4>Made with</h4>
+                            <ul class="skillsUsed">
+                                <li class="skillName"><i class="devicon-html5-plain"></i></li>
+                                <li class="skillName"><i class="devicon-sass-original"></i></li>
+                                <li class="skillName"><i class="devicon-react-original"></i></li>
+                                <li class="skillName"><i class="devicon-firebase-plain"></i></li>
+
+                            </ul>
+                            <div class="projectLink">
+                                <a href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit">Github</a>
+                                <span>|</span>
+                                <a href="https://nifty-goodall-444b58.netlify.app/">Live Site</a>
+                            </div>
+                        </div>
+                        <div class="projectPhoto">
+                            <img src="./assets/NotSoTrivialPursuitPhoto.png">
+                        </div>
+                    </div>
+                </div>
+
+                <section class="contact" id="contact">
+                    <div class="wrapper">
+                        <h2>Contact Me</h2>
+                        
+                        <p>I would love to connect and work together.</p>
+                        <p>Submit a message in the form below or get in touch with me at</p>
+
+                        <div class="contactBoxContainer">
+                            <div class="contactBox">
+                                <i class="far fa-calendar-alt"></i>
+                                <a href="mailto:seunggi.lee21@gmail.com?subject=Get in Touch with Seunggi Lee"><p>Calendly</p></a>
+                                <h4>Schedule a meeting</h4>
+                            </div>
     
+                            <div class="contactBox">
+                                <i class="far fa-envelope"></i>
+                                <a href="mailto:seunggi.lee21@gmail.com?subject=Get in Touch with Seunggi Lee"><p>seunggi.lee21@gmail.com</p></a>
+                                <h4>Email Me</h4>
+                            </div>
+                        </div>
+                        
+
+                        <div class="formContainer">
+                            <form action="#" method="#" class="contactUs" name="contactUs">
+                                <div class="short">
+                                    <div class="short1">
+                                        <label for="Name" class="sr-only">provide your name</label>
+                                        <input type="text" id="name" name="name" placeholder="Your Name">
+                                    </div>
+                        
+                                    <div class="short2">
+                                        <label for="eMail" class="sr-only">provide your Email address</label>
+                                        <input type="text" id="eMail" name="eMail" placeholder="Your E-mail">
+                                    </div>
+                                </div>
+                                <div class="long">
+                                    <label for="Message" class="sr-only">provide your message</label>
+                                    <textarea id="message" name="message" cols="50" rows="6" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="submitButton">Submit</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+
+        </section>
+        </main>
+
+        <footer>
+            <p>© Seunggi Lee 2021</p>
+        </footer>
+
+
 </body>
 </html>
