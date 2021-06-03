@@ -81,10 +81,12 @@ header h1{
 
         background-image: url(../../assets/neon2.jpg);
         background-repeat: no-repeat;
-        background-size:100vw 100%;
+        background-position:center;
         background-size:contain;
-        height:100vh;
-        min-height:900px;
+    }
+
+    .topName {
+        margin-top:260px;
     }
 
     .skillName i {
@@ -108,7 +110,7 @@ header h1{
     
     .burgerMenu {
         list-style:none;
-        background: $seaGreen;
+        background: linear-gradient(to right, $color2, $mainColor);
         position: fixed;
         z-index: 10;
         width: 30%; 
