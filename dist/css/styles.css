@@ -269,11 +269,6 @@ h5 {
   text-transform: uppercase;
 }
 
-.cap {
-  text-transform: uppercase;
-  font-family: "Karla", sans-serif;
-}
-
 .wrapper {
   margin: 0 auto;
   max-width: 1080px;
@@ -303,6 +298,10 @@ header::before {
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
+}
+
+h1 {
+  color: black;
 }
 
 .headerContainer {
@@ -351,7 +350,18 @@ h1 {
 }
 
 .aboutMe {
-  border-bottom: 5px solid #0393ff;
+  display: flex;
+}
+
+h2 {
+  border-bottom: 6px solid #0393ff;
+}
+
+.aboutFlexContainer,
+.border {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .aboutContainer {
@@ -360,7 +370,6 @@ h1 {
 
 .aboutText {
   margin-left: 4vw;
-  margin-right: 4vw;
 }
 
 .aboutText p {
@@ -368,8 +377,8 @@ h1 {
 }
 
 .myself {
-  margin-left: 4vw;
-  width: 35vw;
+  width: 30vw;
+  border: 5px solid #0393ff;
 }
 
 .links {
@@ -400,9 +409,15 @@ a:hover {
   color: #0393ff;
 }
 
-.skills {
+.skills,
+.contact {
   background-color: #f8f9fa;
   padding-top: 100px;
+  width: 100%;
+}
+
+.contact {
+  padding-bottom: 100px;
 }
 
 .skillName:hover {
@@ -415,6 +430,12 @@ a:hover {
   flex-wrap: wrap;
 }
 
+.skillsContainer p {
+  background: -webkit-linear-gradient(#00f2fe, #0393ff);
+  background-clip: text;
+  color: transparent;
+}
+
 .skillName {
   list-style: none;
   color: #0393ff;
@@ -422,7 +443,7 @@ a:hover {
   text-align: center;
   margin: 10px auto;
   padding: 20px;
-  flex-basis: 23%;
+  flex-basis: 17%;
 }
 
 .skillName p {
@@ -438,7 +459,33 @@ a:hover {
 
 .projectPhoto img {
   width: 35vw;
-  border: 5px solid #0393ff;
+}
+
+.projectPhoto {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  max-width: 36.5vw;
+  position: relative;
+  box-sizing: border-box;
+  color: #FFF;
+  background: #000;
+  background-clip: padding-box;
+  border: solid 8px transparent;
+  border-radius: 1rem;
+}
+
+.projectPhoto:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -8px;
+  border-radius: inherit;
+  background: linear-gradient(to right, #00f2fe, #0393ff);
 }
 
 .projectContainer {
@@ -446,7 +493,6 @@ a:hover {
 }
 
 .projectTitle {
-  border-bottom: 5px solid #0393ff;
   margin-top: 100px;
 }
 
@@ -457,6 +503,11 @@ a:hover {
 .project {
   display: flex;
   margin: 100px 2vw;
+  justify-content: space-between;
+}
+
+.projectDescription {
+  margin-right: 50px;
 }
 
 .projectLink {
@@ -496,7 +547,7 @@ textarea {
   background-color: #f8f9fa;
   padding: 50px;
   width: 45%;
-  border: 2px solid #777777;
+  border: 5px solid #0393ff;
   margin-top: 40px;
   text-align: center;
 }
@@ -530,7 +581,6 @@ textarea {
   padding: 10px 30px;
   border: none;
   border-radius: 5%;
-  margin-bottom: 100px;
 }
 
 footer {

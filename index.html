@@ -51,11 +51,13 @@
 
                 <div class="aboutContainer">
                     <div>
-                        <img src="assets/myself.jpg" class="myself" alt="myself">
+                        <img src="assets/me.png" class="myself" alt="myself">
                     </div>
                     <div class="aboutText">
-                        <h2 class="aboutMe">About Me</h2>
-                        <h3>Problem Solver, Team Player, Adaptable</h3>
+                        <div class=aboutFlexContainer>
+                            <h2 class="aboutMe">About Me</h2>
+                            <h3>Problem Solver, Team Player, Adaptive Mind</h3>
+                        </div>
                         <p>I am a front-end web developer with a background in neurosience research currently based in downtown Toronto. Through 5+ years of research lab experience, I am extremely familiar with working on difficult problems while being on tight deadlines, going through , and bringing out the result collaborating with diverse teams. My passion for building and maintaining user-friendly and accessible website stems from my innate desire to learn new concepts and add new tools/protocols at my disposal.</p>
                         <ul class="links">
                             <li><a href="./assets/resume/Seunggi_Lee_Resume_Draft.pdf" download="Seunggi_Lee_Resume"><span class="fas fa-file"></span></a></li>
@@ -82,7 +84,11 @@
 
         <section class="skills">
             <div class="wrapper">
-                <h3>My Skills</h3>
+                <div class="borderContainer">
+                    <div class="border"><h2>My Skills</h2></div>
+                </div>
+                
+                
                 <ul class="skillsContainer">
                     <li class="skillName"><i class="devicon-html5-plain"></i><p>HTML5</p></li>
                     <li class="skillName"><i class="devicon-css3-plain"></i><p>CSS3</p></li>
@@ -108,7 +114,7 @@
         <section class="projects" id="projects">
             <div class="wrapper">
                 <div class="projectTitle">
-                    <h2>Featured Projects</h2>
+                        <div class="border"><h2>Featured Projects</h2></div>
                 </div>
 
                 <div class="projectContainer">
@@ -143,7 +149,7 @@
 
                     <div class="project projectThree">
                         <div class=projectDescription>
-                            <h3>Not So Trivial Pursuit</h3>
+                            <h3>Find Your Music</h3>
                             <p>An interactive and fully responsive web application that quiz users based on API queries from OpenTrivia API. For each combination of user's choice of trivia settings, appropriate trivia quiz will pop up for users. Uncompleted instances of quiz will be saved using firebase and can be called back to keep playing.</p>
                             <h4>Made with</h4>
                             <ul class="skillsUsed">
@@ -211,9 +217,13 @@
                     </div>
                 </div>
 
+            </section>
+
                 <section class="contact" id="contact">
                     <div class="wrapper">
-                        <h2>Contact Me</h2>
+                        <div class="borderContainer">
+                            <div class="border"><h2>Contact Me</h2></div>
+                        </div>
                         
                         <p>I would love to connect and work together.</p>
                         <p>Submit a message in the form below or get in touch with me at</p>
@@ -259,10 +269,6 @@
 
                 </section>
 
-            </div>
-
-
-        </section>
         </main>
 
         <footer>
