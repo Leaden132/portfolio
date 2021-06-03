@@ -535,11 +535,16 @@ h1 {
 .about {
   margin: 100px 0;
   overflow: hidden;
-  min-height: 550px;
+  min-height: 600px;
 }
 
 .aboutMe {
   display: flex;
+}
+
+.about h3 {
+  margin-top: 20px;
+  margin-bottom: 50px;
 }
 
 .homeTop {
