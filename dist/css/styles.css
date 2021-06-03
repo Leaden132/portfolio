@@ -280,6 +280,96 @@ h5 {
   text-transform: uppercase;
 }
 
+@keyframes text-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  2% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  8% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  9% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  12% {
+    opacity: 0.1;
+    text-shadow: 0px 0px #0393ff;
+  }
+  20% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  25% {
+    opacity: 0.3;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  30% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  70% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  72% {
+    opacity: 0.2;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  77% {
+    opacity: .9;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  100% {
+    opacity: .9;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+}
+
+@keyframes letter-flicker {
+  0% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  2% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  4% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  19% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  21% {
+    opacity: 0.1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  23% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  80% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  83% {
+    opacity: 0.4;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+  87% {
+    opacity: 1;
+    text-shadow: 0px 0px 29px #0393ff;
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -299,7 +389,15 @@ header {
   background-repeat: no-repeat;
   background-size: 49vw 100%;
   height: 100vh;
-  min-height: 800px;
+  min-height: 900px;
+}
+
+.neonName {
+  animation: text-flicker 3s linear;
+}
+
+#offset {
+  animation: letter-flicker 3s linear;
 }
 
 .neonBody {
@@ -435,6 +533,7 @@ h1 {
 
 .about {
   margin: 100px 0;
+  overflow-x: hidden;
 }
 
 .aboutMe {
@@ -443,6 +542,7 @@ h1 {
 
 .homeTop {
   display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
@@ -490,7 +590,7 @@ h2 {
 a {
   text-decoration: none;
   font-size: 2.5rem;
-  color: black;
+  color: white;
 }
 
 a:visited {
