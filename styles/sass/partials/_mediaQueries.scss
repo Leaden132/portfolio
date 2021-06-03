@@ -1,14 +1,100 @@
 
-@media (max-width: 680px) {
+@media (max-width:985px) {
+
+.wrapper {
+    max-width:900px;
+    width:95%;
+    margin:0 auto;
+}
+
+header h1{
+    font-size:4rem;
+}
+
+.neonBody {
+    margin-top: 50px;
+}
+
+.project {
+    display:flex;
+    flex-direction: column;
+
+}
+
+.project .projectDescription {
+    margin-left:0;
+    margin-right:0;
+}
+
+.projectFour .projectDescription,
+.projectTwo .projectDescription {
+    order:2;
+}
+
+.projectPhoto {
+    margin: 0 auto;
+    margin-bottom:50px;
+    max-width:53vw;
+}
+.projectPhoto img {
+    width:50vw;
+}
+
+}
+
+@media (max-width:760px) {
+
+    .aboutContainer {
+        flex-direction:column;
+        align-items:center;
+        p {
+            text-align:center;
+        }
+    }
+
+
+    .aboutText {
+        margin-left:0;
+    }
+
+    .myPhoto {
+        margin-top:50px;
+
+    }
+
+    .myself {
+        width: 50vw;
+        box-shadow:none;
+        border: 5px solid $mainColor;
+    }
+    
+}
+
+
+
+@media (max-width: 682px) {
     
 
     //home
     
+    header {
+
+        background-image: url(../../assets/neon2.jpg);
+        background-repeat: no-repeat;
+        background-size:100vw 100%;
+        background-size:contain;
+        height:100vh;
+        min-height:900px;
+    }
+
+    .skillName i {
+        font-size:3rem;
+    }
     
     .wrapper {
-        max-width: 680px;
+        max-width: 650px;
         width: 95%;
-        margin:0;
+        margin:0 auto;
     }
     
     .normalMenu {
@@ -81,6 +167,25 @@
         background-position:-1rem 0rem;
         background-size:110rem 80rem;
         background-repeat:no-repeat;
+    }
+
+    .contactBoxContainer {
+        flex-direction:column;
+        align-items:center;
+
+        .contactBox {
+            width:80vw;
+        }
+    }
+
+
+
+    .skillName i{
+        font-size:3.5rem;
+    }
+
+    .skillName p {
+        font-size:1.8rem;
     }
 
 }
