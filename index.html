@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./dist/css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&family=Spectral&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Karla&family=Spectral&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/12a501f4a0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -39,25 +39,32 @@
             <!-- Naviagation -->
 
             <div class="home" id="home">
-                <h1 class="topName">Hello, I am Seunggi Lee</h1> <h1>A Front-End Web Developer</h1>
+                <div class="homeTop">
+                    <h1 class="topName">Hello, I am <span>Seunggi Lee</span></h1>
+                </div>
+                
+                <h1>A Front-End Web Developer</h1>
+            </div>
+
+            <div class="neonBody">
+                <a href="#about" class="neon-button" onClick="">Welcome</a>
             </div>
         </div>
 
     </header>
-    <div class="neonBody">
-        <a href="#about" class="neon-button" onClick="">Welcome</a>
-    </div>
+
+    <div class='aboutDirect' id="about"></div>
     <main>
 
         <!-- About Me -->
-        <section class="about" id="about">
+        <section class="about">
             <div class="wrapper">
 
                 <div class="aboutContainer">
-                    <div>
+                    <div class="myPhoto" data-aos="fade-right" data-aos-duration="1500">
                         <img src="assets/myself.jpg" class="myself" alt="myself">
                     </div>
-                    <div class="aboutText">
+                    <div class="aboutText" data-aos="fade-left" data-aos-duration="1500">
                         <div class=aboutFlexContainer>
                             <h2 class="aboutMe">About Me</h2>
                             <h3>Problem Solver, Team Player, Adaptive Mind</h3>
@@ -70,7 +77,6 @@
                         </ul>
                     </div>
                 </div>
-            
             </div>
 
         </section>
@@ -86,7 +92,7 @@
                 </div>
                 
                 
-                <ul class="skillsContainer">
+                <ul class="skillsContainer" data-aos="fade-up" data-aos-duration="1500">
                     <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i><p>HTML5</p></li>
                     <li class="skillName"><i class="devicon-css3-plain" title="CSS3"></i><p>CSS3</p></li>
                     <li class="skillName"><i class="devicon-javascript-plain" title="JavaScript"></i><p>JavaScript</p></li>
@@ -201,8 +207,8 @@
                             <ul class="skillsUsed">
                                 <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i></li>
                                 <li class="skillName"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="skillName"><i class="fas fa-mobile-alt" title="Responsive Design"><p>Responsive Design</p></i></li>
-                                <li class="skillName"><i class="fas fa-universal-access" title="Accessibility"></i><p>Accessibility</p></li>
+                                <li class="skillName"><i class="fas fa-mobile-alt" title="Responsive Design"></i></li>
+                                <li class="skillName"><i class="fas fa-universal-access" title="Accessibility"></i></li>
 
                             </ul>
                             <div class="projectLink">
@@ -224,7 +230,7 @@
                         <p>I would love to connect and work together.</p>
                         <p>Submit a message in the form below or get in touch with me at</p>
 
-                        <div class="contactBoxContainer">
+                        <div class="contactBoxContainer" data-aos="fade-up" data-aos-duration="1500">
                             <div class="contactBox">
                                 <i class="far fa-calendar-alt"></i>
                                 <p>Calendly</p>
@@ -239,7 +245,7 @@
                         </div>
                         
 
-                        <div class="formContainer">
+                        <div class="formContainer" data-aos="fade-up" data-aos-duration="1500">
                             <form action="submit" method="POST" class="contactUs" name="contact" data-netlify="true">
                                 <div class="short">
                                     <div class="short1">
