@@ -62,7 +62,7 @@ h1 {
     margin-top:30px;
     list-style:none;
     display:flex;
-    justify-content: right;
+    justify-content: flex-end;
 
 }
 
@@ -93,7 +93,7 @@ h1 {
 h1 {
     text-align:center;
     margin: 0;
-    z-index:10;
+    // z-index:10;
 }
 
 .about {
@@ -197,6 +197,7 @@ a:hover {
 .skillsContainer p {
     background: -webkit-linear-gradient($color2, $mainColor);
     background-clip: text;
+    -webkit-background-clip:text;
     color:transparent;
 
 }
