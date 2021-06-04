@@ -972,9 +972,12 @@ footer p {
     background-position: center;
     background-size: contain;
     min-height: 400px;
-    height: 600px;
+    height: 800px;
   }
   .topName {
+    margin-top: 100px;
+  }
+  .neonBody {
     margin-top: 100px;
   }
   .about {
