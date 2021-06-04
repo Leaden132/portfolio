@@ -21,8 +21,8 @@ header {
     z-index:2;
     color:white;
     
-    // background-image: url(../../assets/neon_good.png);
-    background-image:none;
+    background-image: url(../../assets/neon_good.png);
+    // background-image:none;
     background-size:100vw 100%;
     background-repeat: no-repeat;
     // background-image: url(../../assets/neon2.jpg), url(../../assets/neon2_2.jpg);
@@ -135,6 +135,7 @@ h1 {
 .headerContainer {
     display:flex;
     flex-direction:column;
+    
 }
 
 .normalMenu {
@@ -296,7 +297,7 @@ a:hover {
     background-color:black;
     // background:#000;
     padding-top:100px;
-    width:100%;
+    width:90%;
 }
 
 .contact{
@@ -308,7 +309,7 @@ a:hover {
 } 
 
 .skillsContainer{
-    width: 100%;
+    width: 90%;
     display:flex;
     flex-wrap:wrap;
     // justify-content:space-between;

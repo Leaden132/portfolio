@@ -79,15 +79,23 @@ header h1{
     
     header {
 
-        // background-image: url(../../assets/neon2.jpg);
+        
         background-image:none;
+        // background-image: url(../../assets/neon2.jpg);
         background-repeat: no-repeat;
         background-position:center;
         background-size:contain;
+        min-height:400px;
+        height:600px;
     }
 
     .topName {
-        margin-top:260px;
+        // margin-top:260px;
+        margin-top:100px;
+    }
+
+    .about {
+        margin-top:50px;
     }
 
     .skillName i {
@@ -191,4 +199,84 @@ header h1{
         font-size:1.8rem;
     }
 
+}
+
+
+@media (max-width:460px){
+
+    div {
+        width:100%;
+    }
+
+    .home {
+        align-items:center;
+    }
+    .headerContainer,
+    .aboutFlexContainer,
+    .border {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+
+    }
+    h2 {
+        text-align:center;
+    }
+
+    .flexContainer {
+        align-items:center;
+    }
+
+
+    div {
+        text-align: center;
+    }
+    
+
+    .wrapper {
+        max-width:100vw;
+        width:95%;
+        margin:0 auto;
+    }
+
+    .burgerMenu a {
+        font-size:1.8rem;
+    }
+    .burgerMenu {
+        height:unset;
+    }
+
+    .button {
+        padding: 8px 10px;
+    }
+
+
+    .skillsContainer {
+        align-items:center;
+    }
+
+    .skillName {
+        padding:10px;
+        font-size:2rem;
+        flex-basis:30%;
+    }
+    .skills {
+        margin: 0 auto;
+        align-items:center;
+    }
+
+    .skills .wrapper {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .project {
+        align-items:center;
+        margin: 75px auto;
+    }
+
+    .contact {
+        width:100%;
+    }
 }
