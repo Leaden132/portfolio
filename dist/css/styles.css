@@ -862,6 +862,11 @@ textarea {
   color: black;
 }
 
+form input:focus,
+form textarea:focus {
+  border: 5px solid #00f2fe;
+}
+
 .submitButton {
   display: block;
   margin: 0 auto;
