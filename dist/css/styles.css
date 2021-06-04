@@ -507,7 +507,8 @@ h1 {
   text-transform: uppercase;
 }
 
-.normalMenu a:hover {
+.normalMenu a:hover,
+.normalMenu a:focus {
   border-bottom: 3px solid #00f2fe;
 }
 
@@ -533,8 +534,9 @@ h1 {
 
 .about {
   margin: 100px 0;
+  margin-bottom: 0;
   overflow: hidden;
-  min-height: 950px;
+  min-height: 750px;
 }
 
 .aboutMe {
@@ -580,7 +582,8 @@ h2 {
   box-shadow: -12px 12px 0 0 #0393ff;
 }
 
-.myself:hover {
+.myself:hover,
+.myself:focus {
   box-shadow: -12px 12px 0 0 #00f2fe;
   transition: 1000ms ease;
 }
@@ -595,7 +598,7 @@ h2 {
 
 .links a {
   font-size: 5rem;
-  margin: 50px 50px;
+  margin: 50px 25px;
   color: #769fcd;
   text-shadow: 2px 2px black, 4px 4px white;
   padding-bottom: 1rem;
@@ -608,7 +611,8 @@ h2 {
   display: none;
 }
 
-.links a:hover + .desc {
+.links a:hover + .desc,
+.links a:focus + .desc {
   display: block;
 }
 
@@ -622,7 +626,8 @@ a:visited {
   text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
   color: #00f2fe;
 }
 
@@ -630,15 +635,25 @@ a:hover {
 .contact {
   background-color: black;
   padding-top: 100px;
-  width: 90%;
 }
 
 .contact {
   padding-bottom: 100px;
 }
 
-.skillName:hover {
+.skillName:hover,
+.skillName:focus {
   color: #00f2fe;
+}
+
+.skills .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skills .flexSkill {
+  align-items: flex-start;
 }
 
 .skillsContainer {
@@ -666,7 +681,6 @@ a:hover {
 
 .skillName p {
   margin-top: 30px;
-  height: 2rem;
   font-weight: 900;
   font-size: 2rem;
 }
@@ -676,7 +690,8 @@ a:hover {
   color: white;
 }
 
-.skillName i:hover {
+.skillName i:hover,
+.skillName i:focus {
   color: #00f2fe;
   transition: 500ms ease;
 }
@@ -861,6 +876,19 @@ footer p {
   text-align: center;
 }
 
+@media (min-width: 1450px) {
+  .about {
+    min-height: 850px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1740px) {
+  .about {
+    min-height: 950px;
+  }
+}
+
 @media (max-width: 985px) {
   .wrapper {
     max-width: 900px;
@@ -1010,8 +1038,15 @@ footer p {
 }
 
 @media (max-width: 460px) {
-  div {
-    width: 100%;
+  .burgerMenu {
+    width: 40%;
+    left: -40%;
+  }
+  header {
+    height: 500px;
+  }
+  .desc {
+    display: block;
   }
   .home {
     align-items: center;
@@ -1034,7 +1069,7 @@ footer p {
   }
   .wrapper {
     max-width: 100vw;
-    width: 95%;
+    width: 90%;
     margin: 0 auto;
   }
   .burgerMenu a {
@@ -1047,12 +1082,14 @@ footer p {
     padding: 8px 10px;
   }
   .skillsContainer {
-    align-items: center;
+    margin-top: 50px;
+  }
+  .bottom {
+    height: 120px;
   }
   .skillName {
     padding: 10px;
     font-size: 2rem;
-    flex-basis: 30%;
   }
   .skills {
     margin: 0 auto;
@@ -1069,5 +1106,8 @@ footer p {
   }
   .contact {
     width: 100%;
+  }
+  .contactBox p {
+    font-size: 1.5rem;
   }
 }
