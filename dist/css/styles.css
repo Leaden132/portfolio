@@ -280,6 +280,15 @@ h5 {
   text-transform: uppercase;
 }
 
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0393ff, 0 0 40px #0393ff, 0 0 50px #0393ff, 0 0 60px #0393ff, 0 0 70px #0393ff;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00f2fe, 0 0 40px #00f2fe, 0 0 50px #00f2fe, 0 0 60px #00f2fe, 0 0 70px #00f2fe, 0 0 80px #00f2fe;
+  }
+}
+
 @keyframes text-flicker {
   0% {
     opacity: 0.1;
@@ -393,15 +402,18 @@ header {
 
 .neonName {
   animation: text-flicker 3s linear;
+  -webkit-text-stroke: 1.5px #0393ff;
+  color: white;
+  text-align: center;
+}
+
+.neonName .offset {
+  animation: letter-flicker 3s linear;
 }
 
 .neonName:hover {
-  animation: text-flicker 3s linear infinite;
+  animation: text-flicker 1s linear infinite;
   cursor: pointer;
-}
-
-.offset {
-  animation: letter-flicker 3s linear;
 }
 
 .neonName:hover .offset {

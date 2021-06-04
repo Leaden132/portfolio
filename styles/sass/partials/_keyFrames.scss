@@ -1,4 +1,15 @@
 
+
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px $mainColor, 0 0 40px $mainColor, 0 0 50px $mainColor, 0 0 60px $mainColor, 0 0 70px $mainColor;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px $color2, 0 0 40px $color2, 0 0 50px $color2, 0 0 60px $color2, 0 0 70px $color2, 0 0 80px $color2;
+    }
+  }
+
 @keyframes text-flicker {
     0% {
       opacity:0.1;
