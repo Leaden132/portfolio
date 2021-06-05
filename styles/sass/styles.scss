@@ -3,12 +3,22 @@
 @import "./partials/typography";
 @import "./partials/keyFrames";
 
+//dark/light mode
+// add sr-only spans to each fontawesome icons?
+//maybe get rid of email form
 
 //flicker at the beginning
 
 html {
     scroll-behavior: smooth;
 }
+
+body {
+    transition: background 0.2s linear;
+    background:black;
+}
+
+
 
 .wrapper {
     margin: 0 auto;
@@ -20,7 +30,6 @@ header {
     position:relative;
     z-index:2;
     color:white;
-    
     background-image: url(../../assets/neon_good.png);
     // background-image:none;
     background-size:100vw 100%;
@@ -33,6 +42,10 @@ header {
     height:100vh;
     min-height:900px;
 }
+
+// .projectPhoto:hover {
+//     transform:scale(1.05);
+// }
 
 
 .neonName {
@@ -53,15 +66,21 @@ header {
 }
 
 
+.projectPhoto:hover::before {
+    transform:scale(1.05);
+    transition: 1s ease;
+}
 
-
-
-.neonName:hover {
-    animation: text-flicker 1s linear infinite; 
-    cursor: pointer;
+.projectPhoto:hover > img {
+    transform:scale(1.05);
+    transition: 1s ease;
 }
 
 
+.neonName:hover {
+    animation: text-flicker 3s linear infinite; 
+    cursor: pointer;
+}
 
 .neonName:hover .offset{
     animation: letter-flicker 3s linear infinite; 
@@ -74,19 +93,19 @@ header {
     display: grid;
     place-items: center;
     background: transparent;
-    color: $neonBlue;
+    color: $mainColor;
   }
   .neon-button {
     font-size: 4rem;
     display: inline-block;
     cursor: pointer;
     text-decoration: none;
-    color: $neonBlue;
-    border: $neonBlue 0.5rem solid;
+    color: $mainColor;
+    border: $mainColor 0.5rem solid;
     padding: 1rem 4rem;
     border-radius: 1rem;
     text-shadow: 0 0 5rem #ffffff, 0 0 2rem currentColor;
-    box-shadow: inset 0 0 2rem 0 $neonBlue, 0 0 2rem 0 $neonBlue;
+    box-shadow: inset 0 0 2rem 0 $mainColor, 0 0 2rem 0 $mainColor;
     position: relative;
   }
   
@@ -94,7 +113,7 @@ header {
     pointer-events: none;
     content: "";
     position: absolute;
-    background: $neonBlue;
+    background: $mainColor;
     top: 120%;
     left: 0;
     width: 100%;
@@ -111,9 +130,9 @@ header {
     bottom: 0;
     left: 0;
     right: 0;
-    box-shadow: 0 0 8rem 2rem $neonBlue;
+    box-shadow: 0 0 8rem 2rem $mainColor;
     opacity: 0;
-    background-color: $neonBlue;
+    background-color: $mainColor;
     z-index: -1;
     transition: opacity 200ms linear;
   }
@@ -176,6 +195,8 @@ h1 {
     border-bottom: 3px solid $color2;
     
 }
+
+
 
 .burgerMenu,
 .mobile {
@@ -261,8 +282,8 @@ h2 {
 
 .myself:hover,
 .myself:focus {
-    box-shadow: -12px 12px 0 0 $color2;
-    transition: 1000ms ease;
+    box-shadow: -12px 12px 0 0 black;
+    transition: 1s ease;
 }
 
 .links {
@@ -296,6 +317,7 @@ h2 {
 }
 
 
+
 a {
     text-decoration: none;
     font-size:2.5rem;
@@ -314,19 +336,42 @@ a:focus {
 
 .skills,
 .contact {
-    background-color:black;
+    // background-color:black;
     // background:#000;
     padding-top:100px;
 }
 
 .contact{
+    padding-top:0;
     padding-bottom:100px;
 }
 
-.skillName:hover,
-.skillName:focus{
-    color:$color2;
-} 
+// .skillName:hover,
+// .skillName:focus{
+//     color:$color2;
+// } 
+
+// .skillName i:hover {
+//     transform:scale(1.15);
+//     transition: 1s ease;
+// }
+
+// i:hover {
+//     transform:scale(1.15);
+//     transition: 1s ease;
+// }
+
+// .skillIcon:hover{
+//     // transform:scale(1.25);
+//     font-size:5.5rem !important;
+// }
+
+
+// .skillName:hover > .skillName i::before {
+//     transform:scale(1.05);
+//     transition: 1s ease;
+// }
+
 
 .skills .wrapper {
     display: flex;
@@ -342,8 +387,6 @@ a:focus {
     width: 90%;
     display:flex;
     flex-wrap:wrap;
-    // justify-content:space-between;
-
 }
 
 .skillsContainer p {
@@ -356,21 +399,20 @@ a:focus {
 
 .skillName {
     list-style:none;
-    // margin: 2rem 5vw;
     color:$mainColor;
     font-family:'Poppins', sans-serif;
     text-align:center;
-    // width:15%;
     margin: 10px auto;
     padding: 20px;
     flex-basis:23%;
-    
 }
 
 .skillName p {
+
     margin-top:30px;
     font-weight:900;
     font-size:2rem;
+
 }
 
 .skillName i{
@@ -381,7 +423,7 @@ a:focus {
 .skillName i:hover,
 .skillName i:focus{
     color:$color2;
-    transition: 500ms ease;
+    transition: 1s ease;
 } 
 
 .projectPhoto img{
@@ -394,7 +436,7 @@ a:focus {
   
     display: flex;
     align-items: center;
-    margin-bottom:200px;
+    margin-bottom:260px;
     max-width: 36.5vw;
     position: relative;
     box-sizing: border-box;
@@ -417,10 +459,10 @@ a:focus {
     }
   }
 
+.credit {
+    font-size:2rem;
+}
 
-  .credit {
-      font-weight:bold;
-  }
 
 .projectContainer {
     margin: 2vw;
@@ -508,6 +550,11 @@ a:focus {
 .contactBox i {
     font-size:5rem;
     color:black;
+}
+
+.contactBox i:hover {
+    transform:scale(1.15);
+    transition:1s ease;
 }
 
 

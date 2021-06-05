@@ -15,8 +15,7 @@
     <title>Seunggi Lee's Portfolio</title>
 </head>
 
-<body> 
-
+<body>
     <header class="mainHeader">
         <div class="wrapper headerContainer">
             <a href="#about" class="sr-only">Skip to main content</a>
@@ -28,7 +27,7 @@
                     <li><a href="#contact" aria-label="Move to contact section">contact</a></li>
                 </ul>
 
-                <label for="toggle" class="mobile"><i class="fa fa-bars"></i></label>
+                <label for="toggle" class="mobile"><i class="fa fa-bars" aria-hidden="true"></i></label>
                 <input type="checkbox" class="mobile" id="toggle" name="toggle" />
                 <ul class="burgerMenu">
                     <li><a href="#home" aria-label="Move to home section">home</a></li>
@@ -43,20 +42,19 @@
             <div class="home" id="home">
                 <div class="homeTop">
                     <h1 class="topName">Hello, I am <span class="neonName">Seung<span class="offset">gi</span> Lee</span></h1>
-                
                 <h1>A Front-End Web Developer</h1>
             </div>
-
             <div class="neonBody">
                 <a href="#about" class="neon-button" aria-label="welcome neon sign button">Welcome</a>
             </div>
-        </div>
 
+
+
+        </div>
     </header>
 
     <div class='aboutDirect' id="about"></div>
     <main>
-
         <!-- About Me -->
         <section class="about">
             <div class="wrapper">
@@ -72,19 +70,15 @@
                     <div class="aboutText" data-aos="fade-up" data-aos-duration="1500">
                         <p class="middleText">I am a front-end web developer with a background in neurosience research currently based in downtown Toronto. Through 5+ years of research lab experience, I am extremely familiar with working on difficult problems while being on tight deadlines, going through , and bringing out the result collaborating with diverse teams. My passion for building and maintaining user-friendly and accessible website stems from my innate desire to learn new concepts and add new tools/protocols at my disposal.</p>
                         <ul class="links">
-                            <li><a href="./assets/resume/Seunggi_Lee_Resume_Draft.pdf" download="Seunggi_Lee_Resume" target="_blank" aria-label="link for resume"><i class="fas fa-file"></i></a><p class="desc">Resume</p></li>
-                            <li><a href="https://www.linkedin.com/in/seunggi-lee-msc-4b99b780/" aria-label="link for LinkedIn profile"><i class="fab fa-linkedin-in"></i></a><p class="desc">Linked In</p></li>
-                            <li><a href="https://github.com/Leaden132" aria-label="link for github profile"><i class="fab fa-github"></i></a><p class="desc">Github</p></li>
+                            <li><a href="./assets/resume/Seunggi_Lee_Resume_Draft.pdf" download="Seunggi_Lee_Resume" target="_blank" aria-label="link for resume"><i class="fas fa-file"></i aria-hidden="true"></a><p class="desc">Resume</p></li>
+                            <li><a href="https://www.linkedin.com/in/seunggi-lee-msc-4b99b780/" aria-label="link for LinkedIn profile"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a><p class="desc">Linked In</p></li>
+                            <li><a href="https://github.com/Leaden132" aria-label="link for github profile"><i class="fab fa-github" aria-hidden="true"></i></a><p class="desc">Github</p></li>
                         </ul>
                     </div>
                 </div>
                 </div>
             </div>
-
         </section>
-
-
-
 
 
         <section class="skills">
@@ -93,24 +87,21 @@
                     <div class="border"><h2>My Skills</h2></div>
                 </div>
             </div>
-
             <div class="wrapper">
                 
                 <ul class="skillsContainer" data-aos="fade-up" data-aos-duration="1500">
-                    <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i><p>HTML5</p></li>
-                    <li class="skillName"><i class="devicon-css3-plain" title="CSS3"></i><p>CSS3</p></li>
-                    <li class="skillName"><i class="devicon-javascript-plain" title="JavaScript"></i><p>JavaScript</p></li>
-                    <li class="skillName"><i class="devicon-sass-original" title="SASS"></i><p>SASS</p></li>
-                    <li class="skillName"><i class="devicon-jquery-plain" title="jQuery"></i><p>jQuery</p></li>
-                    <li class="skillName"><i class="devicon-react-original" title="React"></i><p>React</p></li>
-                    <li class="skillName"><i class="devicon-firebase-plain" title="Firebase"></i><p>Firebase</p></li>
-                    <li class="skillName"><i class="devicon-git-plain" title="Git"></i><p>Git</p></li>
-                    <li class="skillName"><i class="fas fa-cog" title="REST APIs"></i><p>REST APIs</p></li>
-                    <li class="skillName bottom"><i class="fas fa-mobile-alt" title="Responsive Design"><p>Responsive Design</p></i></li>
-                    <li class="skillName bottom"><i class="fas fa-universal-access" title="Accessibility"></i><p>Accessibility</p></li>
+                    <li class="skillName"><i class="devicon-html5-plain skillIcon" title="HTML5" aria-hidden="true"></i><p>HTML5</p></li>
+                    <li class="skillName"><i class="devicon-css3-plain skillIcon" title="CSS3" aria-hidden="true"></i><p>CSS3</p></li>
+                    <li class="skillName"><i class="devicon-javascript-plain skillIcon" title="JavaScript" aria-hidden="true"></i><p>JavaScript</p></li>
+                    <li class="skillName"><i class="devicon-sass-original skillIcon" title="SASS" aria-hidden="true"></i><p>SASS</p></li>
+                    <li class="skillName"><i class="devicon-jquery-plain skillIcon" title="jQuery" aria-hidden="true"></i><p>jQuery</p></li>
+                    <li class="skillName"><i class="devicon-react-original skillIcon" title="React" aria-hidden="true"></i><p>React</p></li>
+                    <li class="skillName"><i class="devicon-firebase-plain skillIcon" title="Firebase" aria-hidden="true"></i><p>Firebase</p></li>
+                    <li class="skillName"><i class="devicon-git-plain skillIcon" title="Git" aria-hidden="true"></i><p>Git</p></li>
+                    <li class="skillName"><i class="fas fa-cog" title="REST APIs skillIcon" aria-hidden="true"></i><p>REST APIs</p></li>
+                    <li class="skillName bottom"><i class="fas fa-mobile-alt skillIcon" title="Responsive Design" aria-hidden="true"><p>Responsive Design</p></i></li>
+                    <li class="skillName bottom"><i class="fas fa-universal-access skillIcon" title="Accessibility" aria-hidden="true"></i><p>Accessibility</p></li>
                 </ul>
-
-
 
             </div>
         </section>
@@ -122,25 +113,20 @@
                         <div class="border"><h2>Featured Projects</h2></div>
                 </div>
 
-                <div class="projectContainer">
-                    <!-- <div class="projectFive">
-                        <div>
-                            <h3>LeagueMatch</h3>
-                        </div>
-                    </div> -->
 
+                <div class="projectContainer">
                     <div class="project projectFour">
                         <div class=projectDescription data-aos="fade-up" data-aos-duration="1500">
                             <h3>Not So Trivial Pursuit</h3>
                             <p>An interactive and fully responsive web application that quizzes users based on selected API queries from OpenTrivia API. For each combination of user's choice of trivia settings, appropriate trivia quiz pops up for users. Uncompleted instances of quiz is saved using firebase and can be called back to keep playing. Group programming project with <a href=" https://nicodewu.com" class="credit" aria-label="Nicole Wu's portfolio">Nicole Wu</a>, <a href="https://emilypetracco.com" class="credit" aria-label="Emily Petracco's portfolio">Emily Petracco</a>, and <a href="https://spencerthompson.ca" class="credit" aria-label="Spencer Thompson's portfolio">Spencer Thompson</a>.</p>
-                            <h4>Made with</h4>
+                            <h4 aria-hidden="true">Made with</h4>
+                            <span class="sr-only">This project was made with React, Firebase, REST API, HTML and SASS</span>
                             <ul class="skillsUsed">
-                                <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="skillName"><i class="devicon-sass-original" title="SASS"></i></li>
-                                <li class="skillName"><i class="devicon-react-original" title="React"></i></li>
-                                <li class="skillName"><i class="devicon-firebase-plain" title="Firebase"></i></li>
-                                <li class="skillName"><i class="fas fa-cog" title="REST APIs"></i></li>
-
+                                <li class="skillName"><i class="devicon-html5-plain skillIcon" title="HTML5" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-sass-original skillIcon" title="SASS" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-react-original skillIcon" title="React" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-firebase-plain skillIcon" title="Firebase"></i></li>
+                                <li class="skillName"><i class="fas fa-cog skillIcon" title="REST APIs" aria-hidden="true"></i></li>
                             </ul>
                             <div class="projectLink">
                                 <a href="https://github.com/LochNessTriviaProject/notSoTrivialPursuit" class="button" aria-label="Github for Trivia Project">Github</a>
@@ -160,14 +146,14 @@
                         <div class=projectDescription data-aos="fade-up" data-aos-duration="1500">
                             <h3>Find Your Music</h3>
                             <p>Search for your favourite artist or tracks! This React website will help you find very detailed information about your artist or tracks based on Lastfm API and audioDB API. It also shows recent searches stored in firebase.</p>
-                            <h4>Made with</h4>
+                            <h4 aria-hidden="true">Made with</h4>
+                            <span class="sr-only">This project was made with React, Firebase, REST API, HTML and SASS</span>
                             <ul class="skillsUsed">
-                                <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="skillName"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="skillName"><i class="devicon-react-original" title="React"></i></li>
-                                <li class="skillName"><i class="devicon-firebase-plain" title="Firebase"></i></li>
-                                <li class="skillName"><i class="fas fa-cog" title="REST APIs"></i></li>
-
+                                <li class="skillName"><i class="devicon-html5-plain skillIcon" title="HTML5" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-css3-plain skillIcon" title="CSS3" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-react-original skillIcon" title="React" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-firebase-plain skillIcon" title="Firebase"></i></li>
+                                <li class="skillName"><i class="fas fa-cog" title="REST APIs skillIcon" aria-hidden="true"></i></li>
                             </ul>
                             <div class="projectLink">
                                 <a href="https://github.com/Leaden132/seunggi-lee-project-three-react" class="button" aria-label="Github for music search project">Github</a>
@@ -181,11 +167,12 @@
                         <div class=projectDescription data-aos="fade-up" data-aos-duration="1500">
                             <h3>TMDB MOVIE FUN</h3>
                             <p>A Movie search website made with vanilla JavaScript and TMDB API. You can search by movie title, actor, and Genres, and add movies to to-watch-list. Paired programming project with <a href="https://meiningcheng.com/" class="credit">Meining Cheng</a></p>
-                            <h4>Made with</h4>
+                            <h4 aria-hidden="true">Made with</h4>
+                            <span class="sr-only">This project was made with REST API, HTML and SASS</span>
                             <ul class="skillsUsed">
-                                <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="skillName"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="skillName"><i class="fas fa-cog" title="REST APIs"></i></li>
+                                <li class="skillName"><i class="devicon-html5-plain skillIcon" title="HTML5" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-css3-plain skillIcon" title="CSS3" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="fas fa-cog skillIcon" title="REST APIs" aria-hidden="true"></i></li>
 
                             </ul>
                             <div class="projectLink">
@@ -205,13 +192,14 @@
                         </div>
                         <div class=projectDescription data-aos="fade-up" data-aos-duration="1500">
                             <h3>Captured</h3>
-                            <p>PSD conversion made from client brief and design files including style guide. Fully interactive, responsive, and accessible </p>
-                            <h4>Made with</h4>
+                            <p>PSD conversion made from client brief and design files including style guide. Fully interactive, responsive, and accessible.</p>
+                            <h4 aria-hidden="true">Made with</h4>
+                            <span class="sr-only">This project was made with HTML and CSS</span>
                             <ul class="skillsUsed">
-                                <li class="skillName"><i class="devicon-html5-plain" title="HTML5"></i></li>
-                                <li class="skillName"><i class="devicon-css3-plain" title="CSS3"></i></li>
-                                <li class="skillName"><i class="fas fa-mobile-alt" title="Responsive Design"></i></li>
-                                <li class="skillName"><i class="fas fa-universal-access" title="Accessibility"></i></li>
+                                <li class="skillName"><i class="devicon-html5-plain skillIcon" title="HTML5" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="devicon-css3-plain skillIcon" title="CSS3" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="fas fa-mobile-alt skillIcon" title="Responsive Design" aria-hidden="true"></i></li>
+                                <li class="skillName"><i class="fas fa-universal-access skillIcon" title="Accessibility" aria-hidden="true"></i></li>
 
                             </ul>
                             <div class="projectLink">
