@@ -13,6 +13,11 @@
     }
 }
 
+@media (max-width:1380px) {
+    .modeLabel {
+        right:580px;
+    }
+}
 
 @media (max-width:985px) {
 
@@ -131,6 +136,16 @@ header h1{
         max-width: 650px;
         width: 95%;
         margin:0 auto;
+    }
+
+    .modeLabel {
+        padding: 5px;
+        position: absolute;
+        height: 26px;
+        width: 60px;
+        transform: scale(1.6);
+        top:20px;
+        right:100px;
     }
     
     .normalMenu {

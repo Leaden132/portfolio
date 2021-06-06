@@ -28,23 +28,16 @@ header {
     position:relative;
     z-index:2;
     color:white;
-    // background-image: url(../../assets/neon_good.png);
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../assets/neon_good.png);
     // background-image:none;
     background-size:100vw 100%;
     background-repeat: no-repeat;
-    // background-image: url(../../assets/neon2.jpg), url(../../assets/neon2_2.jpg);
-    // background-position: right, left;
-    // background-repeat: no-repeat;
-    // background-size:49vw 100%;
     transition: 1s ease;
     height:100vh;
     min-height:900px;
+
 }
 
-// .projectPhoto:hover {
-//     transform:scale(1.05);
-// }
 
 
 .neonName {
@@ -150,9 +143,6 @@ header {
   }
 
 
-
-
-
 h1 {
     color:white;
     -webkit-text-stroke: 1px $mainColor;
@@ -175,7 +165,6 @@ h1 {
     list-style:none;
     display:flex;
     justify-content: flex-end;
-
 }
 
 .normalMenu a {

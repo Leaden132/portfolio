@@ -27,7 +27,6 @@ portfolio.goTop = () => {
 
 portfolio.switchMode = () => {
   const modeCheck = document.getElementById('mode');
-  // document.body.classList.toggle('dark');
 
   modeCheck.addEventListener('change', () => {
     document.body.classList.toggle('dark');
