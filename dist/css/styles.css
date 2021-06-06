@@ -684,14 +684,7 @@ a:focus {
   flex-wrap: wrap;
 }
 
-.skillsContainer p {
-  background: -webkit-linear-gradient(#00f2fe, #0393ff);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.skillName {
+.skillsContainer .skillName {
   list-style: none;
   color: #0393ff;
   font-family: 'Poppins', sans-serif;
@@ -701,15 +694,19 @@ a:focus {
   flex-basis: 23%;
 }
 
-.skillName p {
+.skillsContainer .skillName i {
+  font-size: 5rem;
+  color: white;
+}
+
+.skillsContainer .skillName p {
+  background: -webkit-linear-gradient(#00f2fe, #0393ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
   margin-top: 30px;
   font-weight: 900;
   font-size: 2rem;
-}
-
-.skillName i {
-  font-size: 5rem;
-  color: white;
 }
 
 .skillName i:hover,
@@ -844,13 +841,8 @@ textarea {
   transition: 1s ease;
 }
 
-.contact h2 {
+.contactBox h2 {
   margin: 20px 0;
-}
-
-.directContact {
-  text-transform: uppercase;
-  font-weight: bold;
 }
 
 .formContainer {
@@ -904,11 +896,11 @@ form textarea:focus {
 }
 
 footer {
-  background-color: #2C2C2C;
+  background-color: black;
 }
 
 footer p {
-  color: #FAFAFA;
+  color: white;
   text-align: center;
 }
 
