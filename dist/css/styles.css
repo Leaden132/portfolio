@@ -684,7 +684,7 @@ a:focus {
   flex-wrap: wrap;
 }
 
-.skillsContainer .skillName {
+.skillName {
   list-style: none;
   color: #0393ff;
   font-family: 'Poppins', sans-serif;
@@ -694,12 +694,12 @@ a:focus {
   flex-basis: 23%;
 }
 
-.skillsContainer .skillName i {
+.skillName i {
   font-size: 5rem;
   color: white;
 }
 
-.skillsContainer .skillName p {
+.skillName p {
   background: -webkit-linear-gradient(#00f2fe, #0393ff);
   background-clip: text;
   -webkit-background-clip: text;
