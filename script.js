@@ -20,13 +20,25 @@ const scrollFunction = () => {
 }
 
 portfolio.goTop = () => {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
+
+  portfolio.fireFoxAdapt = () => {
+    
+    if(navigator.userAgent.indexOf("Firefox") != -1 ){
+      const webkitArray = document.querySelectorAll('h2');
+
+      for (let i = 0; i < webkitArray.length; i++) {
+        webkitArray[i].classList.add('fireFox');
+    }
+    }
   }
 
 
 portfolio.init = () => {
     portfolio.scrollTop();
+    portfolio.fireFoxAdapt();
 }
 
 
