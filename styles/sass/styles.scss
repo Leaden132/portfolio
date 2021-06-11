@@ -263,8 +263,14 @@ h2 {
     
 }
 
+.topText{
+    margin-top:20px;
+    
+}
+
 .middleText {
-    margin:50px 0;
+    margin-top:10px;
+    margin-bottom: 50px;
 }
 
 
@@ -591,7 +597,7 @@ form textarea:focus {
 
 
 footer {
-    background-color:black;
+    background-color:rgb(26, 21, 21);
     p {
         color:white;
         text-align:center;
