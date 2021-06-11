@@ -388,6 +388,10 @@ body {
   background: black;
 }
 
+h1:hover {
+  cursor: default;
+}
+
 .wrapper {
   margin: 0 auto;
   max-width: 1300px;
@@ -428,12 +432,12 @@ header {
 
 .neonName:hover {
   animation: text-flicker 3s linear infinite;
-  cursor: pointer;
+  cursor: default;
 }
 
 .neonName:hover .offset {
   animation: letter-flicker 3s linear infinite;
-  cursor: pointer;
+  cursor: default;
 }
 
 .neonBody {
@@ -554,7 +558,7 @@ h1 {
   margin: 0;
 }
 
-.aboutDirect {
+.headerSizing {
   height: 100px;
   width: 100px;
 }
