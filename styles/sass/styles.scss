@@ -389,6 +389,15 @@ a:focus {
             font-size:5rem;
             color:white;
         }
+        .amazon {
+            font-size:9rem;
+            // position:relative;
+            // top:-50px;
+            height:50px;
+            display:block;
+            // margin-bottom:50px;
+            transform:translateY(-45%);
+        }
 
         p{
             background: -webkit-linear-gradient($color2, $mainColor);
@@ -403,6 +412,7 @@ a:focus {
     
 
 }
+
 
 .skillName i:hover,
 .skillName i:focus{
