@@ -2,6 +2,7 @@
 @import "./partials/variable";
 @import "./partials/typography";
 @import "./partials/keyFrames";
+@import './partials/themeChange';
 
 //dark/light mode
 // add sr-only spans to each fontawesome icons?
@@ -22,6 +23,9 @@ h1:hover {
     cursor: default;
 }
 
+.modeChange{
+    visibility: hidden;
+}
 
 .wrapper {
     margin: 0 auto;

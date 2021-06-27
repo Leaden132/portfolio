@@ -24,8 +24,9 @@ portfolio.goTop = () => {
     document.documentElement.scrollTop = 0;
   }
 
-  portfolio.fireFoxAdapt = () => {
+portfolio.fireFoxAdapt = () => {
     
+  //checks for firefox browser
     if(navigator.userAgent.indexOf("Firefox") != -1 ){
       const webkitArray = document.querySelectorAll('h2');
 
@@ -36,9 +37,21 @@ portfolio.goTop = () => {
   }
 
 
+//mode switch
+portfolio.switchMode = () => {
+    const modeCheck = document.getElementById('mode');
+  
+    modeCheck.addEventListener('change', () => {
+      document.body.classList.toggle('dark');
+    });
+  }
+  
+
+
 portfolio.init = () => {
     portfolio.scrollTop();
     portfolio.fireFoxAdapt();
+    portfolio.switchMode();
 }
 
 
