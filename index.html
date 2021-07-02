@@ -21,7 +21,6 @@
                 
             <ul class="normalMenu">
                 <div class="modeChange" aria-hidden="true">
-                    <!-- <input type="checkbox" class="modeCheck" id="mode"> -->
                     <div onClick="portfolio.toggleMode()" class="modeLabel">
                         <i class="fas fa-sun"></i>
                         <i class="fas fa-moon"></i>
@@ -37,9 +36,14 @@
         </div>
         <div class="wrapper headerContainer">
             <a href="#about" class="sr-only">Skip to main content</a>
+            <div class="modeChange mobileModeChange" aria-hidden="true">
+                <div onClick="portfolio.toggleMode()" class="modeLabel">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                    <div class="switch"></div>
+                </div>
+            </div>
             <nav>
-
-
             <div class="burgerMenuContainer" aria-hidden="true">
                 <div class="burgerMenuToggle" onClick="portfolio.toggleMenu(this)">
                     <div class="bar1"></div>

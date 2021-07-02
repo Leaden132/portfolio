@@ -176,6 +176,31 @@ body.dark {
         transform: translateX(46px);
     }
 
+    .modeLabel {
+        background-color:white;
+        color:black;
+    }
+
+    .switch {
+        background-color:$theme2Color3;
+    }
+
+    .burgerMenu {
+        background: linear-gradient(to right, $theme2Color, #28aa72);
+        transition: 1.4s ease;
+    }
+    
+    .burgerMenu a:hover,
+    .burgerMenu a:focus {
+        background: #26d187;
+    }
+
+    .burgerMenuToggle {
+        .bar1, .bar2 {
+            background-color:black;
+        }
+    }
+
 }
 
 //light-dark switch
@@ -200,10 +225,12 @@ body.dark {
     width: 60px;
     transform: scale(1.6);
     top:9px;
-    right:42vw;
+    right:600px;
     i {
         font-size:13px;
     }
+
+
 }
 
 
