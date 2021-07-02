@@ -2,7 +2,9 @@
 @import "./partials/variable";
 @import "./partials/typography";
 @import "./partials/keyFrames";
-@import "./partials/themeChange";
+
+@import './partials/themeChange';
+
 //dark/light mode
 // add sr-only spans to each fontawesome icons?
 //maybe get rid of email form
@@ -18,21 +20,28 @@ body {
     background:black;
 }
 
+
+h1:hover {
+    cursor: default;
+}
+
 .wrapper {
     margin: 0 auto;
     max-width: 1300px;
     width: 90%;
 }
 
+
+
+
+
 header {
     position:relative;
     z-index:2;
     color:white;
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../assets/neon_good.png);
-    // background-image:none;
+    background-image: url(../../assets/neon_good.png);
     background-size:100vw 100%;
     background-repeat: no-repeat;
-    transition: 1s ease;
     height:100vh;
     min-height:900px;
 
@@ -70,12 +79,12 @@ header {
 
 .neonName:hover {
     animation: text-flicker 3s linear infinite; 
-    cursor: pointer;
+    cursor: default;
 }
 
 .neonName:hover .offset{
     animation: letter-flicker 3s linear infinite; 
-    cursor: pointer;
+    cursor: default;
 }
 
 
@@ -86,7 +95,7 @@ header {
     background: transparent;
     color: $mainColor;
   }
-  .neon-button {
+  .neonWelcome {
     font-size: 4rem;
     display: inline-block;
     cursor: pointer;
@@ -100,7 +109,7 @@ header {
     position: relative;
   }
   
-  .neon-button::before {
+  .neonWelcome::before {
     pointer-events: none;
     content: "";
     position: absolute;
@@ -114,7 +123,7 @@ header {
     opacity: 0.7;
   }
   
-  .neon-button::after {
+  .neonWelcome::after {
     content: "";
     position: absolute;
     top: 0;
@@ -128,17 +137,17 @@ header {
     transition: opacity 200ms linear;
   }
   
-  .neon-button:hover,
-  .neon-button:focus {
+  .neonWelcome:hover,
+  .neonWelcome:focus {
     color: $neonBg;
   }
   
-  .neon-button:hover::before,
-  .neon-button:focus::before {
+  .neonWelcome:hover::before,
+  .neonWelcome:focus::before {
     opacity: 1;
   }
-  .neon-button:hover::after,
-  .neon-button:focus::after {
+  .neonWelcome:hover::after,
+  .neonWelcome:focus::after {
     opacity: 0.9;
   }
 
@@ -160,35 +169,75 @@ h1 {
     
 }
 
-.normalMenu {
-    margin-top:30px;
-    list-style:none;
+
+.menu {
+    width:100%;
     display:flex;
-    justify-content: flex-end;
+    // justify-content: space-between;
+    text-align:end;
+    position:fixed;
+    box-shadow: 2px 0 3px 1px grey;
+    z-index:5;
+    font-size:1.8rem;
+    background-color:black;
+
+    .normalMenu {
+        width:100%;
+        height:40px;
+        list-style:none;
+        display:flex;
+        justify-content: flex-end;
+        align-items:center;
+
+        a{
+          .current{
+            color:white;
+            border-bottom:1px solid $mainColor;
+            border-radius:2px;
+          }
+
+          color:#c3cbd1;
+
+        li{
+            margin-left:20px;
+            height:35px;
+            margin-right:30px;
+            text-align:center;
+            padding-top:6px;
+            padding-left:5px;
+            padding-right:5px;
+            border-radius:5px;
+            color:#c3cbd1;
+            font-family:$Fjalla;
+            text-transform: uppercase;
+            font-size:2.1rem;
+            transition-duration: 0.4s;
+
+            &:hover{
+            background-color:$mainColor;
+            border-radius:5px;
+            color:white;
+            }
+            
+            &:focus {
+                border-bottom:1px solid $mainColor;
+                border-radius:2px;
+              }
+          }
+        }
+  }
+
+
+.burgerMenu{
+    display:none;
 }
 
-.normalMenu a {
-    margin: 0 20px;
-    text-decoration:none;
-    color:white;
-    font-family: $mainFont;
-    font-size:2rem;
-    line-height:2.9rem;
-    text-transform:uppercase;
-}
-
-.normalMenu a:hover,
-.normalMenu a:focus {
-    border-bottom: 3px solid $color2;
+.burgerMenuToggle{
+    display:none;
     
 }
 
 
-
-.burgerMenu,
-.mobile {
-    display:none;
-}
 
 .topName {
     margin-top:22vh;
@@ -202,7 +251,7 @@ h1 {
     // z-index:10;
 }
 
-.aboutDirect{
+.headerSizing{
     height:100px;
     width:100px;
 }
@@ -237,6 +286,11 @@ h2 {
     border-bottom: 6px solid $mainColor;
 }
 
+.fireFox {
+    -webkit-text-stroke: 1px $mainColor;
+    color:white;
+}
+
 .aboutFlexContainer,
 .border {
     display:flex;
@@ -252,8 +306,14 @@ h2 {
     margin-left:4vw;
 }
 
+.topText{
+    margin-top:20px;
+    
+}
+
 .middleText {
-    margin:50px 0;
+    margin-top:10px;
+    margin-bottom: 50px;
 }
 
 
@@ -327,6 +387,10 @@ a:focus {
 }
 
 
+.contactP {
+    margin-top:20px;
+}
+
 .skills .wrapper {
     display: flex;
     flex-direction: column;
@@ -338,7 +402,6 @@ a:focus {
 }
 
 
-
 .skillsContainer {
     
     width: 90%;
@@ -346,6 +409,7 @@ a:focus {
     flex-wrap:wrap;
         
 }
+
     .skillName {
         list-style:none;
         color:$mainColor;
@@ -360,6 +424,17 @@ a:focus {
             color:white;
         }
 
+        .amazon {
+            font-size:9rem;
+            // position:relative;
+            // top:-50px;
+            height:50px;
+            display:block;
+            // margin-bottom:50px;
+            transform:translateY(-45%);
+        }
+
+
         p{
             background: -webkit-linear-gradient($color2, $mainColor);
             background-clip: text;
@@ -368,9 +443,8 @@ a:focus {
             margin-top:30px;
             font-weight:900;
             font-size:2rem;
-        }
-    }
-    
+      }
+}
 
 
 
@@ -562,8 +636,11 @@ a:focus {
 }
 
 
+
 footer {
-    background-color:black;
+
+    background-color:rgb(26, 21, 21);
+
     p {
         color:white;
         text-align:center;

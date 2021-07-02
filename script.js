@@ -20,10 +20,32 @@ const scrollFunction = () => {
 }
 
 portfolio.goTop = () => {
-    document.body.scrollTop = 0; 
-    document.documentElement.scrollTop = 0; 
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 
+portfolio.fireFoxAdapt = () => {
+    
+  //checks for firefox browser
+    if(navigator.userAgent.indexOf("Firefox") != -1 ){
+      const webkitArray = document.querySelectorAll('h2');
+
+      for (let i = 0; i < webkitArray.length; i++) {
+        webkitArray[i].classList.add('fireFox');
+    }
+    }
+  }
+
+
+//mode switch
+portfolio.toggleMode = () => {
+      document.body.classList.toggle('dark');
+}
+  
+
+portfolio.toggleMenu = (menu) => {
+  menu.parentElement.classList.toggle("turnMenu");
+}
 
 portfolio.switchMode = () => {
   const modeCheck = document.getElementById('mode');
@@ -36,7 +58,7 @@ portfolio.switchMode = () => {
 
 portfolio.init = () => {
     portfolio.scrollTop();
-    portfolio.switchMode();
+    portfolio.fireFoxAdapt();
 }
 
 
