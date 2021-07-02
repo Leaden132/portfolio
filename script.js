@@ -47,6 +47,9 @@ portfolio.switchMode = () => {
   }
   
 
+portfolio.toggleMenu = (menu) => {
+  menu.parentElement.classList.toggle("turnMenu");
+}
 
 portfolio.init = () => {
     portfolio.scrollTop();

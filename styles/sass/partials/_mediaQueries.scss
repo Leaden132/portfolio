@@ -133,10 +133,51 @@ header h1{
         margin:0 auto;
     }
     
-    .normalMenu {
+    .menu {
         display:none;
     }
     
+
+
+
+    .burgerMenuToggle{
+        position:absolute;
+        right:10px;
+        top:10px;
+        z-index:300;
+        display:inline-block;
+        height:50px;
+        width:50px;
+        cursor:pointer;
+        margin-top:10px;
+
+        .bar1, .bar2 {
+            width: 30px;
+            height: 2px;
+            background-color: white;
+            margin: 7px auto;
+            transition: 0.4s;
+          }
+          
+
+    }
+
+      
+
+      
+      .turnMenu .bar1 {
+
+        transform: rotate(-45deg) translate(-3px, 3px);
+        -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+      }
+      
+      .turnMenu .bar2 {
+
+        transform: rotate(45deg) translate(-3px, -3px);
+        -webkit-transform: rotate(45deg) translate(-3px, -3px);
+      }
+
+
     .burgerMenu,
     .mobile {
         display:unset;
@@ -176,26 +217,10 @@ header h1{
         font-size:4rem;
     }
     
-    
-    input[type="checkbox"]:checked + .burgerMenu {
-        left: 0;  
+    .turnMenu .burgerMenu {
+        left:0;
     }
     
-    // input[type="checkbox"]:checked ~ label.fa {
-    // 	font-size:10rem;
-    // }
-    
-    input[type="checkbox"] {
-        display: none;  
-    }
-    
-    label[for="toggle"] {
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        z-index: 10;
-        
-    }
     
     
     .mainHeader {
