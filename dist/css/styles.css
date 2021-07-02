@@ -548,7 +548,6 @@ body.dark .switch {
 
 body.dark .burgerMenu {
   background: linear-gradient(to right, #4CEEA7, #28aa72);
-  transition: 1.4s ease;
 }
 
 body.dark .burgerMenu a:hover,
