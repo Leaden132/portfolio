@@ -13,6 +13,11 @@
     }
 }
 
+@media (max-width:1380px) {
+    .modeLabel {
+        right:580px;
+    }
+}
 
 @media (max-width:985px) {
 
@@ -132,6 +137,16 @@ header h1{
         width: 95%;
         margin:0 auto;
     }
+
+    .modeLabel {
+        padding: 5px;
+        position: absolute;
+        height: 26px;
+        width: 60px;
+        transform: scale(1.6);
+        top:20px;
+        right:100px;
+    }
     
     .menu {
         display:none;
@@ -199,8 +214,8 @@ header h1{
         text-decoration:none;
         text-transform: uppercase;
         font-family:$mainFont;
-        color:$black;
-        border-bottom: 1px solid $black;
+        color:black;
+        border-bottom: 1px solid black;
         display: inline-block;
         font-size: 2rem;
         width: 100%;

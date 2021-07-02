@@ -47,10 +47,18 @@ portfolio.toggleMenu = (menu) => {
   menu.parentElement.classList.toggle("turnMenu");
 }
 
+portfolio.switchMode = () => {
+  const modeCheck = document.getElementById('mode');
+
+  modeCheck.addEventListener('change', () => {
+    document.body.classList.toggle('dark');
+  });
+}
+
+
 portfolio.init = () => {
     portfolio.scrollTop();
     portfolio.fireFoxAdapt();
-    // portfolio.toggleMode();
 }
 
 

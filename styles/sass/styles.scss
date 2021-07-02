@@ -2,6 +2,7 @@
 @import "./partials/variable";
 @import "./partials/typography";
 @import "./partials/keyFrames";
+
 @import './partials/themeChange';
 
 //dark/light mode
@@ -19,10 +20,10 @@ body {
     background:black;
 }
 
+
 h1:hover {
     cursor: default;
 }
-
 
 .wrapper {
     margin: 0 auto;
@@ -43,6 +44,7 @@ header {
     background-repeat: no-repeat;
     height:100vh;
     min-height:900px;
+
 }
 
 
@@ -61,7 +63,6 @@ header {
     // animation: glow 1s ease-in-out alternate 4;
     // text-shadow: 0 0 60px $mainColor;
   }
-
 }
 
 
@@ -151,9 +152,6 @@ header {
   }
 
 
-
-
-
 h1 {
     color:white;
     -webkit-text-stroke: 1px $mainColor;
@@ -228,7 +226,7 @@ h1 {
           }
         }
   }
-}
+
 
 .burgerMenu{
     display:none;
@@ -306,8 +304,6 @@ h2 {
 
 .aboutText {
     margin-left:4vw;
-    // margin-right:4vw;
-    
 }
 
 .topText{
@@ -323,10 +319,8 @@ h2 {
 
 
 .myself {
-    // margin-left:4vw;
     width:30vw;
     box-shadow: -12px 12px 0 0 $mainColor;
-    // border: 5px solid $mainColor;
 }
 
 .myself:hover,
@@ -383,10 +377,7 @@ a:focus {
     color:$color2;
 }
 
-.skills,
-.contact {
-    // background-color:black;
-    // background:#000;
+.skills{
     padding-top:100px;
 }
 
@@ -395,11 +386,10 @@ a:focus {
     padding-bottom:100px;
 }
 
+
 .contactP {
     margin-top:20px;
 }
-
-
 
 .skills .wrapper {
     display: flex;
@@ -433,6 +423,7 @@ a:focus {
             font-size:5rem;
             color:white;
         }
+
         .amazon {
             font-size:9rem;
             // position:relative;
@@ -443,6 +434,7 @@ a:focus {
             transform:translateY(-45%);
         }
 
+
         p{
             background: -webkit-linear-gradient($color2, $mainColor);
             background-clip: text;
@@ -451,11 +443,9 @@ a:focus {
             margin-top:30px;
             font-weight:900;
             font-size:2rem;
-        }
-
-    
-
+      }
 }
+
 
 
 .skillName i:hover,
@@ -479,11 +469,10 @@ a:focus {
     position: relative;
     box-sizing: border-box;
   
-    $border: 8px;
     color: #FFFFFF;
     background: #000000;
     background-clip: padding-box; 
-    border: solid $border transparent; 
+    border: solid 8px transparent; 
     border-radius: 1rem;
   
     &:before {
@@ -491,7 +480,7 @@ a:focus {
       position: absolute;
       top: 0; right: 0; bottom: 0; left: 0;
       z-index: -1;
-      margin: -$border; 
+      margin: -8px; 
       border-radius: inherit; 
       background: linear-gradient(to right, $color2, $mainColor);
     }
@@ -624,16 +613,11 @@ a:focus {
     color:black;
 }
 
-form input:focus,
-form textarea:focus {
-    border: 5px solid $color2;
-}
+
 
 .submitButton {
     display:block;
     margin: 0 auto;
-    color:black;
-    background-color: $mainColor;
     padding:10px 30px;
     border:3px solid transparent;
     border-radius:5px;
@@ -654,7 +638,9 @@ form textarea:focus {
 
 
 footer {
+
     background-color:rgb(26, 21, 21);
+
     p {
         color:white;
         text-align:center;

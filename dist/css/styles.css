@@ -380,8 +380,9 @@ h5 {
 }
 
 body.dark {
+
   background: white;
-}
+
 
 body.dark header {
   background-image: none;
@@ -396,6 +397,7 @@ body.dark .neonName {
 }
 
 body.dark .neonBody {
+
   color: #F61067;
 }
 
@@ -416,17 +418,20 @@ body.dark .neonBody .neonWelcome::after {
 
 body.dark .neonBody .neonWelcome:hover,
 body.dark .neonBody .neonWelcome:focus {
+
   color: white;
 }
 
 body.dark h1 {
   color: black;
+
   -webkit-text-stroke: 1px #4CEEA7;
 }
 
 body.dark h2 {
   color: #4CEEA7;
   border-bottom: 6px solid #4CEEA7;
+
 }
 
 body.dark p {
@@ -445,6 +450,7 @@ body.dark .normalMenu a:focus {
 body.dark .myself {
   width: 30vw;
   box-shadow: -12px 12px 0 0 #4CEEA7;
+
 }
 
 body.dark .myself:hover,
@@ -510,8 +516,10 @@ body.dark .contactBox {
 
 body.dark .button {
   color: white;
+
   background-color: #4CEEA7;
   box-shadow: 2px 2px white, 4px 4px #4CEEA7;
+
 }
 
 body.dark .button:hover, body.dark .button:focus {
@@ -551,6 +559,7 @@ body.dark .switch {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   padding: 2px;
   position: absolute;
   height: 23px;
@@ -563,6 +572,7 @@ body.dark .switch {
 .modeLabel i {
   font-size: 13px;
 }
+
 
 .fa-moon {
   position: relative;
@@ -608,9 +618,10 @@ header {
   position: relative;
   z-index: 2;
   color: white;
-  background-image: url(../../assets/neon_good.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(../../assets/neon_good.png);
   background-size: 100vw 100%;
   background-repeat: no-repeat;
+  transition: 1s ease;
   height: 100vh;
   min-height: 900px;
 }
@@ -916,8 +927,7 @@ a:focus {
   color: #00f2fe;
 }
 
-.skills,
-.contact {
+.skills {
   padding-top: 100px;
 }
 
@@ -1138,16 +1148,9 @@ textarea {
   color: black;
 }
 
-form input:focus,
-form textarea:focus {
-  border: 5px solid #00f2fe;
-}
-
 .submitButton {
   display: block;
   margin: 0 auto;
-  color: black;
-  background-color: #0393ff;
   padding: 10px 30px;
   border: 3px solid transparent;
   border-radius: 5px;
@@ -1183,6 +1186,12 @@ footer p {
 @media (min-width: 1740px) {
   .about {
     min-height: 950px;
+  }
+}
+
+@media (max-width: 1380px) {
+  .modeLabel {
+    right: 580px;
   }
 }
 
@@ -1315,8 +1324,8 @@ footer p {
     text-decoration: none;
     text-transform: uppercase;
     font-family: "poppins", sans-serif;
-    color: #2C2C2C;
-    border-bottom: 1px solid #2C2C2C;
+    color: black;
+    border-bottom: 1px solid black;
     display: inline-block;
     font-size: 2rem;
     width: 100%;
