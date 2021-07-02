@@ -1,45 +1,48 @@
 
 
 body.dark {
-	background: #70798C;
+	// background: #70798C;
+    background:white;
 
     header {
         background-image: none;
-        background-color:#70798C;
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.884)), url(../../assets/vintage-theme-az3.jpg);
+        background-color:white;
+        
+        // background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.884)), url(../../assets/vintage-theme-az3.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
 
     .neonName {
-        -webkit-text-stroke: 1.5px $theme2Color;
+        -webkit-text-stroke: 1.5px $theme2Color3;
         color: $dark;
     }
 
     .neonBody {
-        color:$theme2Color;
+        color:$theme2Color3;
 
-        .neon-button{
-            color: $theme2Color;
-            border: $theme2Color 0.5rem solid;
-            box-shadow: inset 0 0 2rem 0 $theme2Color, 0 0 2rem 0 $theme2Color;
+        .neonWelcome{
+            color: $theme2Color3;
+            border: $theme2Color3 0.5rem solid;
+            box-shadow: inset 0 0 2rem 0 $theme2Color3, 0 0 2rem 0 $theme2Color3;
         }
 
-        .neon-button::before {
-            background:$theme2Color;
+        .neonWelcome::before {
+            background:$theme2Color3;
         }
 
-        .neon-button::after {
-            box-shadow: 0 0 8rem 2rem $theme2Color;
-            background-color: $theme2Color;
+        .neonWelcome::after {
+            box-shadow: 0 0 8rem 2rem $theme2Color3;
+            background-color: $theme2Color3;
         }
 
-        .neon-button:hover,
-        .neon-button:focus {
+        .neonWelcome:hover,
+        .neonWelcome:focus {
             color:$light;
         }
     }
+
     
     h1 {
         color:$dark;
@@ -47,6 +50,7 @@ body.dark {
     }
 
     h2 {
+        color:$theme2Color;
         border-bottom: 6px solid $theme2Color;
     }
 
@@ -107,7 +111,7 @@ body.dark {
             }
 
             p{
-                background: -webkit-linear-gradient($theme2Color2, $theme2Color);
+                background: -webkit-linear-gradient(#28aa72, $theme2Color);
                 background-clip: text;
                 -webkit-background-clip:text;
                 color:transparent;
@@ -118,27 +122,28 @@ body.dark {
     
     .skillName i:hover,
     .skillName i:focus{
-        color:$theme2Color2;
+        color:$theme2Color;
         transition: 500ms ease;
     } 
 
     .projectPhoto:before {
-            background: linear-gradient(to right, $theme2Color2, $theme2Color);
+            background: linear-gradient(to right,$theme2Color3, $theme2Color);
     }
 
     .contactBox {
-        background-color:$theme2Color2;
+        background-color:white;
         border: 5px solid $theme2Color;
     }
 
     .button {
         color:$light;
         background-color: $theme2Color;
-        box-shadow: 2px 2px $dark, 4px 4px $theme2Color;
+        box-shadow: 2px 2px $light, 4px 4px $theme2Color;
+        // border-color:white;
 
         &:hover, &:focus {
             background-color:$theme2Color2;
-            color:$dark;
+            color:$light;
         }
     }
 
@@ -150,19 +155,17 @@ body.dark {
 
     
     footer {
-        background-color:$light;
+        background-color:$dark;
         p {
-            color:$dark;
+            color:$light;
             text-align:center;
         }
     }
-    
 
 
-
-
-
-
+    .switch {
+        transform: translateX(46px);
+    }
 
 }
 
@@ -185,37 +188,35 @@ body.dark {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 2px;
     position: absolute;
-    height: 26px;
+    height: 23px;
     width: 60px;
     transform: scale(1.6);
-    top:32px;
+    top:9px;
     right:42vw;
     i {
         font-size:13px;
     }
 }
 
-
+.fa-moon {
+    position:relative;
+    left:17px;
+}
 
 .fa-sun {
     position:relative;
-    left:17px;
+    left:3px;
 }
 
 .switch {
     position:relative;
     background-color:$color2;
     border-radius:50px;
-    right: 45px;
+    right: 48px;
     height:15px;
     width:15px;
     transform:translateX(13px);
     transition: 0.5s ease;
-}
-
-
-.modeCheck:checked + .modeLabel .switch {
-	transform: translateX(45px);
 }

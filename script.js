@@ -38,13 +38,9 @@ portfolio.fireFoxAdapt = () => {
 
 
 //mode switch
-portfolio.switchMode = () => {
-    const modeCheck = document.getElementById('mode');
-  
-    modeCheck.addEventListener('change', () => {
+portfolio.toggleMode = () => {
       document.body.classList.toggle('dark');
-    });
-  }
+}
   
 
 portfolio.toggleMenu = (menu) => {
@@ -54,7 +50,7 @@ portfolio.toggleMenu = (menu) => {
 portfolio.init = () => {
     portfolio.scrollTop();
     portfolio.fireFoxAdapt();
-    portfolio.switchMode();
+    // portfolio.toggleMode();
 }
 
 
