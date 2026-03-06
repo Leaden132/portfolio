@@ -259,7 +259,13 @@ h1 {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  font-family: "Inter", sans-serif;
+}
+
+/* Preserve original Inter font for hero section */
+header h1,
+header .neonName,
+header .neonWelcome {
+  font-family: "Inter", "poppins", sans-serif;
 }
 
 h2 {
