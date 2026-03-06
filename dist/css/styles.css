@@ -259,7 +259,7 @@ h1 {
   font-weight: 700;
   line-height: 1.1;
   letter-spacing: -0.02em;
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h2 {
@@ -343,9 +343,8 @@ body.dark header {
 }
 
 body.dark .neonName {
-  color: #F61067;
-  text-shadow: 0 0 10px rgba(246, 16, 103, 0.6), 0 0 20px rgba(246, 16, 103, 0.3);
-  -webkit-text-stroke: 0;
+  -webkit-text-stroke: 1.5px #F61067;
+  color: #1a1a2e;
 }
 
 body.dark .neonBody {
@@ -374,11 +373,7 @@ body.dark .neonBody .neonWelcome:focus {
 
 body.dark h1 {
   color: #1a1a2e;
-}
-
-body.dark .neonName {
-  color: #F61067;
-  text-shadow: 0 0 10px rgba(246, 16, 103, 0.6), 0 0 20px rgba(246, 16, 103, 0.3);
+  -webkit-text-stroke: 1px #4CEEA7;
 }
 
 body.dark h2 {
@@ -636,8 +631,8 @@ header {
 
 .neonName {
   animation: text-flicker 3s linear;
-  color: #0393ff;
-  text-shadow: 0 0 10px rgba(3, 147, 255, 0.6), 0 0 20px rgba(3, 147, 255, 0.3);
+  -webkit-text-stroke: 1.5px #0393ff;
+  color: white;
   text-align: center;
 }
 
@@ -685,7 +680,7 @@ header {
   text-shadow: 0 0 5rem #ffffff, 0 0 2rem currentColor;
   box-shadow: inset 0 0 2rem 0 #0393ff, 0 0 2rem 0 #0393ff;
   position: relative;
-  font-family: "Outfit", sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   letter-spacing: 0.1em;
 }
@@ -735,6 +730,7 @@ header {
 
 h1 {
   color: white;
+  -webkit-text-stroke: 1px #0393ff;
 }
 
 .home {
