@@ -237,12 +237,14 @@ html {
 html {
   font-size: 62.5%;
   font-family: "Outfit", sans-serif;
+  color: black;
   color: white;
-  background-color: #0a0a0f;
+  background-color: black;
+  background-image: black;
 }
 
 html header {
-  background-color: #0a0a0f;
+  background-color: black;
   color: white;
 }
 
@@ -330,12 +332,12 @@ h5 {
 
 /* Dark/Light theme toggle */
 body.dark {
-  background: #f8f9fc;
+  background: white;
 }
 
 body.dark header {
   background-image: none;
-  background-color: #f8f9fc;
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -601,8 +603,8 @@ html {
 }
 
 body {
-  transition: background 0.3s ease;
-  background: #0a0a0f;
+  transition: background 0.2s linear;
+  background: black;
 }
 
 h1:hover {
@@ -1083,7 +1085,7 @@ body.dark .devicon-nextjs-plain:hover {
   position: relative;
   box-sizing: border-box;
   color: #FFFFFF;
-  background: #0a0a0f;
+  background: #000000;
   background-clip: padding-box;
   border: solid 4px transparent;
   border-radius: 12px;
