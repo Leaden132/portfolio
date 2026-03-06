@@ -343,8 +343,9 @@ body.dark header {
 }
 
 body.dark .neonName {
-  -webkit-text-stroke: 1.5px #F61067;
-  color: #1a1a2e;
+  color: #F61067;
+  text-shadow: 0 0 10px rgba(246, 16, 103, 0.6), 0 0 20px rgba(246, 16, 103, 0.3);
+  -webkit-text-stroke: 0;
 }
 
 body.dark .neonBody {
@@ -376,7 +377,8 @@ body.dark h1 {
 }
 
 body.dark .neonName {
-  -webkit-text-stroke: 1.5px #4CEEA7;
+  color: #F61067;
+  text-shadow: 0 0 10px rgba(246, 16, 103, 0.6), 0 0 20px rgba(246, 16, 103, 0.3);
 }
 
 body.dark h2 {
@@ -562,7 +564,7 @@ body.dark .burgerMenuToggle .bar1, body.dark .burgerMenuToggle .bar2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2px;
+  padding: 2px 8px;
   position: relative;
   height: 28px;
   width: 56px;
@@ -574,16 +576,17 @@ body.dark .burgerMenuToggle .bar1, body.dark .burgerMenuToggle .bar2 {
 .modeLabel i {
   font-size: 12px;
   position: relative;
+  z-index: 1;
 }
 
 .fa-moon {
   position: relative;
-  left: 14px;
+  left: 0;
 }
 
 .fa-sun {
   position: relative;
-  left: 3px;
+  left: 0;
 }
 
 .switch {
@@ -633,8 +636,8 @@ header {
 
 .neonName {
   animation: text-flicker 3s linear;
-  -webkit-text-stroke: 1.5px #0393ff;
-  color: white;
+  color: #0393ff;
+  text-shadow: 0 0 10px rgba(3, 147, 255, 0.6), 0 0 20px rgba(3, 147, 255, 0.3);
   text-align: center;
 }
 
