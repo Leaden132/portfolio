@@ -517,7 +517,7 @@ body.dark footer p {
 }
 
 body.dark .switch {
-  left: 30px;
+  left: 39px;
   transform: translateY(-50%);
 }
 
@@ -559,17 +559,17 @@ body.dark .burgerMenuToggle .bar1, body.dark .burgerMenuToggle .bar2 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2px 8px;
+  padding: 0 10px;
   position: relative;
-  height: 28px;
-  width: 56px;
+  height: 36px;
+  width: 72px;
   top: auto;
   right: auto;
   transform: none;
 }
 
 .modeLabel i {
-  font-size: 12px;
+  font-size: 14px;
   position: relative;
   z-index: 1;
 }
@@ -588,12 +588,11 @@ body.dark .burgerMenuToggle .bar1, body.dark .burgerMenuToggle .bar2 {
   position: absolute;
   background-color: #00f2fe;
   border-radius: 50px;
-  right: auto;
   left: 3px;
   top: 50%;
   transform: translateY(-50%);
-  height: 20px;
-  width: 20px;
+  height: 28px;
+  width: 28px;
   transition: 0.5s ease;
 }
 
@@ -1416,10 +1415,10 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2px;
+    padding: 0 10px;
     position: relative;
-    height: 28px;
-    width: 56px;
+    height: 36px;
+    width: 72px;
     transform: none;
     top: auto;
     right: auto;
