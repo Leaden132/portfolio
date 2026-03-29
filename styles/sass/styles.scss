@@ -463,15 +463,27 @@ a:focus {
 
 }
 
+.featuredProject .projectPhoto {
+    background: #FFFFFF;
+
+    &:before {
+        background: #FFFFFF;
+    }
+}
+
+.projectThree .projectPhoto:before {
+    background: linear-gradient(135deg, #00f2fe, #0393ff);
+}
+
 .projectPhoto {
-  
+
     display: flex;
     align-items: center;
     margin-bottom:260px;
     max-width: 36.5vw;
     position: relative;
     box-sizing: border-box;
-  
+
     color: #FFFFFF;
     background: #000000;
     background-clip: padding-box; 

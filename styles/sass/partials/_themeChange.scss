@@ -146,6 +146,10 @@ body.dark {
             background: linear-gradient(to right,$theme2Color3, $theme2Color);
     }
 
+    .projectThree .projectPhoto:before {
+            background: linear-gradient(to right,$theme2Color3, $theme2Color);
+    }
+
     .contactBox {
         background-color:white;
 
